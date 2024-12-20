@@ -16,7 +16,7 @@
 - **build with the default OpenCV 4.2.0 of ROS Noetic**
   - `gedit ar_demo/CMakeLists.txt`
   - Modify `set(OpenCV_DIR "/usr/lib/x86_64-linux-gnu/cmake/opencv4")`
-  - `gedit camera_models/CMakeLists.txt`
+  - `gedit camera_model/CMakeLists.txt`
   - Modify `set(OpenCV_DIR "/usr/lib/x86_64-linux-gnu/cmake/opencv4")`
   - `gedit data_generator/CMakeLists.txt`
   - Modify `set(OpenCV_DIR "/usr/lib/x86_64-linux-gnu/cmake/opencv4")`

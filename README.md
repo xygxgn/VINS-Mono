@@ -48,6 +48,9 @@
   - `cd ~/catkin_ws/src`
   - `catkin_make`
 
+If you find this work useful or interesting, please kindly give us a star :star:, thanks!
+
+
 - **Notes**
   - ***The version of the OpenCV must be consistent with the version of OpenCV used by cv-bridge***
 

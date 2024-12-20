@@ -33,7 +33,7 @@
 - **build with OpenCV installed by yourself *(install in `/usr/local`)***
   - `gedit ar_demo/CMakeLists.txt`
   - Modify `set(OpenCV_DIR "/usr/local/lib/cmake/opencv4")`
-  - `gedit camera_models/CMakeLists.txt`
+  - `gedit camera_model/CMakeLists.txt`
   - Modify `set(OpenCV_DIR "/usr/local/lib/cmake/opencv4")`
   - `gedit data_generator/CMakeLists.txt`
   - Modify `set(OpenCV_DIR "/usr/local/lib/cmake/opencv4")`

@@ -3,7 +3,7 @@
 #common parameters
 imu_topic: "/imu0"
 image_topic: "/cam0/image_raw"
-output_path: "/home/shaozu/output/"
+output_path: "/home/lilabws001/exam_ws/vins-mono/src/VINS-Mono/output"
 
 #camera calibration 
 model_type: PINHOLE
@@ -15,12 +15,19 @@ distortion_parameters:
    k2: 8.228e-02
    p1: 5.333e-05
    p2: -1.578e-04
+   # k1: -0.28340811
+   # k2: 0.07395907
+   # p1: 0.00019359
+   # p2: 1.76187114e-05
 projection_parameters:
    fx: 4.616e+02
    fy: 4.603e+02
    cx: 3.630e+02
    cy: 2.481e+02
-
+   # fx: 458.654
+   # fy: 457.296
+   # cx: 367.215
+   # cy: 248.375
 # Extrinsic parameter between IMU and Camera.
 estimate_extrinsic: 0   # 0  Have an accurate extrinsic parameters. We will trust the following imu^R_cam, imu^T_cam, don't change it.
                         # 1  Have an initial guess about extrinsic parameters. We will optimize around your initial guess.
@@ -60,13 +67,17 @@ acc_n: 0.08          # accelerometer measurement noise standard deviation. #0.2 
 gyr_n: 0.004         # gyroscope measurement noise standard deviation.     #0.05  0.004
 acc_w: 0.00004         # accelerometer bias random work noise standard deviation.  #0.02
 gyr_w: 2.0e-6       # gyroscope bias random work noise standard deviation.     #4.0e-5
+# acc_n: 0.1          # accelerometer measurement noise standard deviation. #0.2   0.04
+# gyr_n: 0.01         # gyroscope measurement noise standard deviation.     #0.05  0.004
+# acc_w: 0.001         # accelerometer bias random work noise standard deviation.  #0.02
+# gyr_w: 0.0001       # gyroscope bias random work noise standard deviation.     #4.0e-5
 g_norm: 9.81007     # gravity magnitude
 
 #loop closure parameters
-loop_closure: 1                    # start loop closure
+loop_closure: 0                    # start loop closure
 load_previous_pose_graph: 0        # load and reuse previous pose graph; load from 'pose_graph_save_path'
 fast_relocalization: 0             # useful in real-time and large project
-pose_graph_save_path: "/home/shaozu/output/pose_graph/" # save and load path
+pose_graph_save_path: "/home/lilabws001/exam_ws/vins-mono/src/VINS-Mono/output" # save and load path
 
 #unsynchronization parameters
 estimate_td: 0                      # online estimate time offset between camera and imu
@@ -77,6 +88,6 @@ rolling_shutter: 0                  # 0: global shutter camera, 1: rolling shutt
 rolling_shutter_tr: 0               # unit: s. rolling shutter read out time per frame (from data sheet). 
 
 #visualization parameters
-save_image: 1                   # save image in pose graph for visualization prupose; you can close this function by setting 0 
+save_image: 0                   # save image in pose graph for visualization prupose; you can close this function by setting 0 
 visualize_imu_forward: 0        # output imu forward propogation to achieve low latency and high frequence results
 visualize_camera_size: 0.4      # size of camera marker in RVIZ

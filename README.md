@@ -12,7 +12,7 @@
 - **download the source package**
   - `mkdir ~/catkin_ws/src && cd ~/catkin_ws/src`
   - `git clone https://github.com/xygxgn/VINS-Mono.git`
-  - `cd VINS-Fusion`
+  - `cd VINS-Mono`
 - **build with the default OpenCV 4.2.0 of ROS Noetic**
   - `gedit ar_demo/CMakeLists.txt`
   - Modify `set(OpenCV_DIR "/usr/lib/x86_64-linux-gnu/cmake/opencv4")`

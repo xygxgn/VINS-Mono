@@ -7,6 +7,8 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall")
 
 find_package(catkin REQUIRED COMPONENTS roscpp std_msgs geometry_msgs nav_msgs cv_bridge image_transport)
 
+# set(OpenCV_DIR "/usr/lib/x86_64-linux-gnu/cmake/opencv4")
+# set(OpenCV_DIR "/usr/local/lib/cmake/opencv4")
 find_package(OpenCV REQUIRED)
 
 catkin_package()

@@ -15,6 +15,8 @@ find_package(catkin REQUIRED COMPONENTS
     roslib
     )
 
+# set(OpenCV_DIR "/usr/lib/x86_64-linux-gnu/cmake/opencv4")
+# set(OpenCV_DIR "/usr/local/lib/cmake/opencv4")
 find_package(OpenCV)
 
 
